@@ -74,7 +74,7 @@ namespace TravellingMan
                 {
                     UseableBPaths.AddRange(PathRepository.Paths.Where(x => x.locationB == item.locationA && x.timeToWalk + item.startTime <= distanceWalked));
                     UseableAPaths.AddRange(PathRepository.Paths.Where(x => x.locationA == item.locationA && x.timeToWalk + item.startTime <= distanceWalked));
-                }
+                }//
                 foreach (var item in UseableAPaths)
                 {
                     if (item.locationB == route.end)
